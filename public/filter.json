@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "name": "Orchard House",
+        "prics": 700,
+        "location": "India",
+        "when": "2022-09-10",
+        "images": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg",
+        "ditils": {
+            "Beds": 5,
+            "Bethroom": 3,
+            "area": "4 m3",
+            "dis": "390 Green  valley Highiand lake"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Meadow View",
+        "prics": 1500,
+        "location": "Bangladesh",
+        "when": "2022-09-11",
+        "images": "https://cdn.pixabay.com/photo/2014/07/10/17/18/large-home-389271__340.jpg",
+        "ditils": {
+            "Beds": 12,
+            "Bethroom": 4,
+            "area": "6 m3",
+            "dis": "990 Green  valley Highiand lake"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Rose Cottage",
+        "prics": 1900,
+        "location": "Canada",
+        "when": "2022-09-12",
+        "images": "https://cdn.pixabay.com/photo/2018/05/08/13/44/architecture-3383067__340.jpg",
+        "ditils": {
+            "Beds": 16,
+            "Bethroom": 7,
+            "area": "8 m3",
+            "dis": "1290 Green  valley Highiand lake"
+        }
+    },
+    {
+        "id": 4,
+        "name": "The Hollies",
+        "prics": 2600,
+        "location": "Japan",
+        "when": "2022-09-13",
+        "images": "https://cdn.pixabay.com/photo/2016/08/05/17/32/new-1572747__340.jpg",
+        "ditils": {
+            "Beds": 9,
+            "Bethroom": 4,
+            "area": "20 m3",
+            "dis": "3290 Green  valley Highiand lake"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Oak Barn",
+        "prics": 4000,
+        "location": "United States",
+        "when": "2022-09-14",
+        "images": "https://cdn.pixabay.com/photo/2016/08/16/03/50/exterior-1597098__340.jpg",
+        "ditils": {
+            "Beds": 6,
+            "Bethroom": 2,
+            "area": "15 m3",
+            "dis": "690 Green  valley Highiand lake"
+        }
+    },
+    {
+        "id": 6,
+        "name": "The Willows",
+        "prics": 5000,
+        "location": "Australia",
+        "when": "2022-09-15",
+        "images": "https://cdn.pixabay.com/photo/2020/01/16/15/09/landscape-4770871__340.jpg",
+        "ditils": {
+            "Beds": 21,
+            "Bethroom": 1,
+            "area": "5 m3",
+            "dis": "90 Green  valley Highiand lake"
+        }
+    },
+    {
+        "id": 7,
+        "name": "School House",
+        "prics": 9000,
+        "location": "Switzerland",
+        "when": "2022-09-16",
+        "images": "https://cdn.pixabay.com/photo/2017/06/16/13/40/new-home-2409165__340.jpg",
+        "ditils": {
+            "Beds": 4,
+            "Bethroom": 6,
+            "area": "9 m3",
+            "dis": "460 Green  valley Highiand lake"
+        }
+    },
+    {
+        "id": 8,
+        "name": "The Willows",
+        "prics": 5000,
+        "location": "Switzerland",
+        "when": "2022-09-17",
+        "images": "https://cdn.pixabay.com/photo/2013/08/03/07/40/home-169540__340.jpg",
+        "ditils": {
+            "Beds": 4,
+            "Bethroom": 1,
+            "area": "10 m3",
+            "dis": "40 Green  valley Highiand lake"
+        }
+    }
+]
