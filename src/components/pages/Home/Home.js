@@ -35,10 +35,11 @@ export const Home = () => {
         if (!location && !prices && !room) {
             return;
         }
-        const pri = parseInt(prices)
-
-        serch = filterseult.filter(country => {
-            return country?.location?.toLowerCase().indexOf(location?.toLowerCase()) !== -1 || pri >= parseInt(country?.prics) || country?.ditils?.Bethroom == room
+        const pricesplit = prices.split(',')
+        const pri1 = parseInt(pricesplit[0])
+        const pri2 = parseInt(pricesplit[1])
+         serch = filterseult.filter(country => {
+            return country?.location?.toLowerCase().indexOf(location?.toLowerCase()) !== -1 || (pri1 <= parseInt(country?.prics) && pri2 >= parseInt(country?.prics)) || country?.ditils?.Bethroom == room
 
         })
         setserch(serch)
@@ -87,13 +88,13 @@ export const Home = () => {
                     <option value={"default"} disabled>
                         Choose  Prics
                     </option>
-                    <option value={500} >$ 500-1000</option>
-                    <option value={1500}>$ 1200-1500</option>
-                    <option value={2000}>$ 1550-2000</option>
-                    <option value={2900}>$ 2100-2900</option>
-                    <option value={4000}>$ 3000-4000</option>
-                    <option value={5000}>$ 4100-5000</option>
-                    <option value={9000}>$ 5050-9000</option>
+                    <option value={"500,1000"} >$ 500-1000</option>
+                    <option value={"1200,1500"}>$ 1200-1500</option>
+                    <option value={"1550,2000"}>$ 1550-2000</option>
+                    <option value={"2100,2900"}>$ 2100-2900</option>
+                    <option value={"3000,4000"}>$ 3000-4000</option>
+                    <option value={"4100,5000"}>$ 4100-5000</option>
+                    <option value={"5050,9000"}>$ 5050-9000</option>
                 </select>
                 <input className='filter_option' onChange={(e) => setTima(e.target.value)} type="Date" required />
                 <button className='filter_submit-btn' onClick={() => submit(location, prices, room)}>Submit</button>
