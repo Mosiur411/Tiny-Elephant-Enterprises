@@ -18,7 +18,7 @@ export const Home = () => {
             return country.name.toLowerCase().indexOf(choice.toLowerCase()) !== -1;
         });
     }
-    const [location, setlocation] = useState();
+    const [ltn, setlocation] = useState();
     const [room, setBethroom] = useState();
     const [prices, setprices] = useState();
     const [time, setTima] = useState();
@@ -30,18 +30,23 @@ export const Home = () => {
         });
     }
     {/* ===================== filter result submit =================  */ }
-    const submit = (location, prices, room) => {
+    const submit = (ltn, prices, room) => {
 
-        if (!location && !prices && !room) {
+        if (!ltn && !prices && !room) {
             return;
         }
-        const pricesplit = prices.split(',')
-        const pri1 = parseInt(pricesplit[0])
-        const pri2 = parseInt(pricesplit[1])
-         serch = filterseult.filter(country => {
-            return country?.location?.toLowerCase().indexOf(location?.toLowerCase()) !== -1 || (pri1 <= parseInt(country?.prics) && pri2 >= parseInt(country?.prics)) || country?.ditils?.Bethroom == room
+        let pri1;
+        let pri2;
+        if (prices) {
+            const pricesplit = prices.split(',')
+            pri1 = parseInt(pricesplit[0])
+            pri2 = parseInt(pricesplit[1])
+        }
+        serch = filterseult.filter(country => {
+            return country?.location?.toLowerCase().indexOf(ltn?.toLowerCase()) !== -1 || (pri1 <= parseInt(country?.prics) && pri2 >= parseInt(country?.prics)) || country?.ditils?.Bethroom == room
 
         })
+        // console.log(serch)
         setserch(serch)
 
     }
@@ -50,7 +55,7 @@ export const Home = () => {
             {/* ===================== search area =================  */}
             <div className='search_are'>
                 <h1>Search properties to rent</h1>
-                <input className='search_input' onChange={(e) => setChoice(e.target.value)} type="text" placeholder="Search" required />
+                <input className='search_input' onChange={(e) => setChoice(e.target.value)} type="text" placeholder="Search Prodect Names :-" required />
             </div>
             {/* ============== filter section area  ==================  */}
             <div className='filtering-are'>
@@ -97,7 +102,7 @@ export const Home = () => {
                     <option value={"5050,9000"}>$ 5050-9000</option>
                 </select>
                 <input className='filter_option' onChange={(e) => setTima(e.target.value)} type="Date" required />
-                <button className='filter_submit-btn' onClick={() => submit(location, prices, room)}>Submit</button>
+                <button className='filter_submit-btn' onClick={() => submit(ltn, prices, room)}>Submit</button>
             </div>
             <div className="row">
                 {
